@@ -501,6 +501,11 @@ else:
     CSP_DEFAULT_SRC = ["'self'"] + CSP_ADDITIONAL_HOSTS
     CSP_SCRIPT_SRC = ["'self'"] + CSP_ADDITIONAL_HOSTS
 
+# Additional CSP headers
+CSP_BASE_URI=("'none'",)
+CSP_FRAME_ANCESTORS=("'none'",)
+CSP_FORM_ACTION=("'self'",)
+
 # storage of user export and import files
 USE_S3_FOR_EXPORTS = env.bool("USE_S3_FOR_EXPORTS", False)
 
